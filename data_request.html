@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Data Request Page</title>
+
+
+</head>
+<body style="cursor: auto;">
+<br>
+<br>
+<p style="text-align:center"><img src="ole_health.png" alt="Ole_Health"></p>
+
+<form name="Data Request Form" class="form-horizontal" role="form">
+
+<fieldset>
+<legend>Help us understand the context of your data request</legend>
+
+ <div class="form-group">  <!-- name of person requesting data form group  -->
+    <label for="name" class="control-label">Name &nbsp</label>
+    <div class="col-10">
+      <input name = "Name" id="name" type = "text" placeholder="your name">
+    </div>
+  </div>
+  
+  <div class="form-group"> <!-- deadline of data request form group  -->
+    <label for="deadline" class="control-label">I need this data by &nbsp</label>
+    <div class="col-10">
+      <input type="date" class="form-control" id="deadline">
+    </div>
+  </div>
+
+<div class="form-group"> <!-- priority of data request form group  -->
+    <label for="priority" class="control-label">Priority of this request &nbsp</label>
+    <div class="col-10">
+     <select name="Reason for Data Request" id="priority">
+		 <option value="5">5 (Organization will shut down tomorrow if not completed immediately)</option>
+		 <option value="4">4</option>
+		 <option value="3">3</option>
+		 <option value="2">2</option>
+		 <option value="1">1 (No decision will result from this data--I am requesting this data because I am curious, and if there happens to be capacity)</option>
+</select>
+    </div>
+  </div>
+
+<div class="form-group"> <!-- recurrence of data request form group  -->
+    <label for="interval" class="control-label">I want this data &nbsp</label>
+    <div class="col-10">
+     <select name="Recurrent Data Request" id="interval">
+		 <option value="Once">Just this once</option>
+		 <option value="Daily">Daily from now on</option>
+		 <option value="Weekly">Weekly from now on</option>
+		 <option value="Monthly">Monthly from now on</option>
+		 <option value="Quarterly">Quarterly from now on</option>
+		 <option value="Yearly">Yearly from now on</option>
+</select>
+    </div>
+  </div>
+
+ <div class="form-group"> <!-- reason for data request form group  -->
+    <label for="reason" class="control-label">Reason for request &nbsp</label>
+    <div class="col-10">
+      <textarea name="Reason for Data Request" placeholder="For example: I need data for the Napa Valley Vintner's Report, an important grant." style="margin: 0px; width: 50%; height: 5em;"></textarea>
+    </div>
+  </div>
+
+</fieldset>
+
+<fieldset>
+<legend>Help us understand what data to provide you with</legend>
+
+ <div class="form-group"> <!-- my data question form group  -->
+    <label for="question" class="control-label">My question &nbsp</label>
+    <div class="col-10">
+      <textarea name="Question" placeholder="For example: I need to know whether WHS is doing more Paps in 2015 than in 2014." style="margin: 0px; width: 50%; height: 5em;"></textarea>
+    </div>
+  </div>
+
+<br>
+
+<p style="text-align: center;">I want the following included in my data request:</p>
+
+<table align="center"">
+
+	<tbody>
+		<tr>
+			<th scope="row"><label class="checkbox-inline"><input type="checkbox" value="">&nbsp ONLY Active Patients &nbsp &nbsp &nbsp</label></th></td>
+			<th scope="row"><label class="checkbox-inline"><input type="checkbox" value="">&nbsp Account Number &nbsp &nbsp &nbsp</label></th>
+			<th scope="row"><label class="checkbox-inline"><input type="checkbox" value="">&nbsp Patient Name &nbsp &nbsp &nbsp</label></td>
+			<th scope="row"><label class="checkbox-inline"><input type="checkbox" value="">&nbsp Date of Birth &nbsp &nbsp &nbsp</label></th></td>
+			<th scope="row"><label class="checkbox-inline"><input type="checkbox" value="">&nbsp Data broken down by provider / site &nbsp &nbsp &nbsp</label></th></td>		
+		</tr>
+	</tbody>
+</table>
+
+<br>
+
+ <div class="form-group"> <!-- my data question form group  -->
+    <label for="notes" class="control-label">Additional notes &nbsp</label>
+    <div class="col-10">
+      <textarea name="notes" placeholder="The more information you are able to provide, the less likely that our team will have additional questions for you. Feel free to include information about how you want your results communicated to you." style="margin: 0px; width: 50%; height: 5em;"></textarea>
+    </div>
+  </div>
+
+<br> 
+
+<p style="text-align: center;"><input type="submit" value="Submit my data request" onclick="window.location='submitted.html';"/></p>
+
+</fieldset>
+
+</form>
+</body>
+</html>
